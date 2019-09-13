@@ -1,11 +1,14 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.Collection;
+import java.util.Random;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
  *  modified string 
  *
- * @author Bob
+ * @author Wei Xin
  * @version 1.1
  */
 public class Person2 {
@@ -31,7 +34,12 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+	  Random ran = new Random();
+	  List<Character> list = Chars.asList(input.toCharArray());
+	  Collection.shuffle(list);
+	  StringBuilder sb = new StringBuilder();
+	  list.forEach(c -> sb.append(c));
+	  return sb.toString();
 	}
 	/**
 	 * Return a string rep of this object
