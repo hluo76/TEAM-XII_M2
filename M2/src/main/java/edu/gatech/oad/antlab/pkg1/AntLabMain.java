@@ -12,7 +12,7 @@ import edu.gatech.oad.antlab.pkg2.*;
  * Prints out a simple message gathered from all of the other classes
  * in the package structure
  */
- public class AntLabMain {
+public class AntLabMain {
     
     /**antlab11.java message class*/
     private AntLab11 ant11;
@@ -57,8 +57,8 @@ import edu.gatech.oad.antlab.pkg2.*;
           + ant22.getMessage() + ant31.getMessage();
 		  //Person1 replace P1 with your name
 		  //and gburdell1 with your gt id
-		  Person1 p1 = new Person1("P1");
-		  toPrint += p1.toString("gburdell1");
+		  Person1 p1 = new Person1("Robin Luo");
+		  toPrint += p1.toString("hluo76");
 		  //Person2 replace P2 with your name
 		  //and gburdell with your gt id
 		  Person2 p2 = new Person2("Wei Xin");
