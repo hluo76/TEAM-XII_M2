@@ -1,6 +1,8 @@
 package edu.gatech.oad.antlab.person;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -35,8 +37,11 @@ public class Person2 {
 	private String calc(String input) {
 	  //Person 2 put your implementation here
 	  Random ran = new Random();
-	  List<Character> list = Chars.asList(input.toCharArray());
-	  Collection.shuffle(list);
+	  List<Character> list = new ArrayList<>();
+	  for (char ch : input.toCharArray()) {
+		  list.add(ch);
+	  }
+	  Collections.shuffle(list);
 	  StringBuilder sb = new StringBuilder();
 	  list.forEach(c -> sb.append(c));
 	  return sb.toString();
