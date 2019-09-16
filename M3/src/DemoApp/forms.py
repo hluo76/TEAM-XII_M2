@@ -6,7 +6,7 @@ type_choices = [('Easy', 'Easy'), ('Medium', 'Medium'), ('Hard', 'Hard'), ('Hell
 class LoadForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
     type = SelectField('Type', choices=type_choices)
-    search = SubmitField('Search')
+    search = SubmitField('Start Game')
 
 class gameForm(FlaskForm):
     username = StringField('Username', validators=[ Length(min=2, max=20)])
