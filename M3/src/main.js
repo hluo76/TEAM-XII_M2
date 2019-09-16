@@ -13,7 +13,7 @@ function createWindow () {
 
 var pyshell =  require('python-shell');
 
-pyshell.run('src/app.py',  function  (err, results)  {
+pyshell.run('src/app.py',  function  (err)  {
  if  (err)  throw err;
 });   	
     
