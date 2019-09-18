@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+
+<body>
+<div id="header">
+    <h1>Welcome to Space Trader! </h1>
+</div>
+<div id="nav">
+    <form action="" method="POST"></form>
+        {{ form.username.label }}
+        <div class="input">
+            {{ form.username }}
+        </div>
+        {{ form.type.label }}
+        <div class="select">
+            {{ form.type }}
+        </div>
+        <div class="input">
+                {{ form.search }}
+        </div>
+    </form>
+    
+
+</div>
+<a href="{{ url_for('home') }}">
+    <button type="button">Back</button>
+</a>
+</body>
+</html>
